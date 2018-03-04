@@ -1,0 +1,115 @@
+body{
+  display: flex;
+  font-family: 'Dancing Script', cursive;
+  justify-content: center;
+  background: #02010a;
+  margin: 0;
+  padding: 0;
+
+}
+
+body img{
+  box-shadow: 2px 2px 5px #02010a;
+}
+
+.container{
+  display: flex;
+  flex-flow: row wrap;
+  width: 900px;
+
+
+  }
+
+  .container div{
+    box-sizing: border-box;
+    padding: 20px;
+
+  }
+
+.c1{
+  display: flex;
+  background: #5b7989;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+  justify-content:space-between;
+}
+
+
+
+.c2{
+  display: flex;
+  background: #82c3a6;
+  width: 100%;
+  justify-content: center;
+}
+
+.c3{
+  background: #d5c75f;
+  width: 50%;
+
+}
+
+.c4{
+  background: #d5c75f;
+  width: 50%;
+
+}
+
+
+.c5{
+  background: #C6d5c5;
+  width: 100%;
+
+}
+
+
+logo{
+  font-size: 2em;
+  text-shadow: 2px 0px  #02010a;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  font-size: 1.3em;
+}
+
+
+#perro1{
+  width: 50%;
+}
+
+#perro2{
+  box-shadow: 2px 2px 5px #82c3a6;
+  transition: all 1s ease-in-out;
+}
+
+#perro2:hover{
+
+  transform: rotate(10deg);
+}
+
+#perro3{
+  transition: all 1s ease-in-out;
+}
+
+#perro3:hover{
+  transform: translateX(20px) translateY(-5px) ;
+  box-shadow: 2px 2px 5px #82c3a6;
+}
+
+.c3,.c4{
+  display: flex;
+  justify-content: center;
+}
+
+a {
+    width: 90%;
+}
+
+a img {
+  width: 100%;
+  border: solid 1px black;
+}
