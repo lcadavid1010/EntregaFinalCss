@@ -19,8 +19,8 @@ body img{
   display: flex;
   flex-flow: row wrap;
   width: 900px;
-
-
+  animation-name: ani_container;
+  animation-duration: 4s;
   }
 
   .container div{
@@ -41,10 +41,9 @@ body img{
 
 
 .c2{
-  display: flex;
   background: #82c3a6;
   width: 100%;
-  justify-content: center;
+
 }
 
 .c3{
@@ -86,6 +85,7 @@ body img{
   font-size: 2em;
   text-shadow: 2px 0px  #02010a;
   width: 50%;
+
 }
 
 nav a{
@@ -98,8 +98,9 @@ nav a{
 
 
 #perro1{
-  display: flex;
-  width: 90%;
+  display:block;
+  width: 75%;
+  margin:auto;
 }
 
 #perro2{
@@ -149,23 +150,70 @@ width: 1.3em;
 
 }
 
+.foto {
+
+  width: 33.33%;
+  background: #d5c75f;
+
+}
+
+.foto img{
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+.f1 img{
+  filter: blur(10px);
+}
+
+.f2 img, .f4 img, .f6 img{
+  filter: grayscale(100%);
+}
+
+.f3 img{
+  filter: sepia(90%);
+}
+
 
 @media (max-width: 900px){
-  .c3, .c4, .c6, .c7, .c8, .c9{
+  .c3, .c4, .c6, .c7, .c8, .c9, .foto{
     width: 100%;
     font-size: 1.3em;
   }
   nav, #logo{
     display: flex;
     width: 100%;
-    
-
   }
 
   .c1{
     flex-wrap: wrap;
   }
 
+}
 
+@-webkit-keyframes ani_container {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+
+}
+
+@-moz-keyframes ani_container {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
 
 }
