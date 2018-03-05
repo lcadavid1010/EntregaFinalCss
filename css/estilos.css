@@ -1,3 +1,6 @@
+
+
+
 body{
   display: flex;
   font-family: 'Dancing Script', cursive;
@@ -58,15 +61,31 @@ body img{
 
 
 .c5{
+  display: flex;
   background: #C6d5c5;
   width: 100%;
-
+  border-radius: 0px 0px 10px 10px;
 }
 
+.c6{
+  width: 25%;
 
-logo{
+
+}
+.c7{
+  width: 25%;
+}
+.c8{
+  width: 25%;
+}
+.c9{
+  width: 25%;
+}
+
+#logo{
   font-size: 2em;
   text-shadow: 2px 0px  #02010a;
+  width: 50%;
 }
 
 nav a{
@@ -74,11 +93,13 @@ nav a{
   text-decoration: none;
   padding: 8px;
   font-size: 1.3em;
+  width: 50%;
 }
 
 
 #perro1{
-  width: 50%;
+  display: flex;
+  width: 90%;
 }
 
 #perro2{
@@ -112,4 +133,39 @@ a {
 a img {
   width: 100%;
   border: solid 1px black;
+}
+
+#sociaMedia{
+box-shadow: none;
+width: 1.3em;
+
+}
+
+.c6, .c7, .c8, .c9{
+
+  background:  #C6d5c5;
+  width: 25%;
+
+
+}
+
+
+@media (max-width: 900px){
+  .c3, .c4, .c6, .c7, .c8, .c9{
+    width: 100%;
+    font-size: 1.3em;
+  }
+  nav, #logo{
+    display: flex;
+    width: 100%;
+    
+
+  }
+
+  .c1{
+    flex-wrap: wrap;
+  }
+
+
+
 }
